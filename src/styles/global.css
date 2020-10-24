@@ -108,3 +108,17 @@ body {
 #signin #signinButton:hover{
     background: #459043;
 }
+
+.redefinirSenha {
+    color: #fff;
+}
+
+.redefinirSenha h1 {
+    color: #459043;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.redefinirSenha p {
+    margin-top: 150px;
+}
