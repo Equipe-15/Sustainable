@@ -10,27 +10,28 @@
 </head>
 <body>
     <div id="container">
-        
-        <img src="../assets/logo.png" alt="Logo" />
 
-        
+        <div class="redefinirSenha">
+            <h1>Redefinir Senha</h1>
+
+            <p>
+                Insira uma nova senha de acesso.
+            </p>
+        </div>
+
             <form>
                 <div class="TextInput">
-                    <i class="fa fa-user" aria-hidden="true"></i> 
-                    <input class="inputText" type="text" placeholder="e-mail" />
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="nova senha" />
                 </div>
+
                 <div class="TextInput">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" placeholder="senha" />
-                </div>
-                <div class="teste">
-                    <strong><a href="esqueciASenha.html">Esqueci a senha</a></strong>
+                    <input type="password" placeholder="repetir senha" />
                 </div>
 
                 <div id="signin">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <button id="signinButton" onclick="alert(message())">Entrar</button>
-                    <a id="linkCadastro" href="./cadastro.html">Cadastre-se</a>
+                    <button id="signinButton" onclick="alert(message())">Redefinir senha</button>
                 </div>
                 
             </form>

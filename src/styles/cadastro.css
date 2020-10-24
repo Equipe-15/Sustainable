@@ -12,9 +12,8 @@ body {
 }
 
 #container {
-    border:1px solid white;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,8 +22,8 @@ body {
 }
 
 #container img {
-    width: 180px;
-    margin-top: 180px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #container form {
@@ -60,7 +59,15 @@ body {
     border-radius: 4px;
     padding-left: 10px;
     margin-left: 10px;
+    display: flex;
+    flex: 1;
 }
+
+.TextInput input {
+    background: #fff;  
+}
+
+
 
 
 .TextInput {
