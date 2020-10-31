@@ -111,3 +111,25 @@
   .buttonMore a:hover {
     background: #2E8B57;
   }
+
+  #titlePerfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #titlePerfil button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border: 0;
+    background: red;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  #titlePerfil button:hover{
+      background: #8B0000;
+  }
+

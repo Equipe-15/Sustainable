@@ -17,32 +17,31 @@
             <form>
                 <div class="TextInput">
                     <i class="fa fa-user" aria-hidden="true"></i> 
-                    <input class="inputText" type="text" placeholder="e-mail" />
+                    <input class="inputText" id="email" type="email" placeholder="e-mail" />
                 </div>
                 <div class="TextInput">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" placeholder="senha" />
+                    <input type="password" id="password" placeholder="senha" />
                 </div>
                 <div class="teste">
                     <strong><a href="esqueciASenha.html">Esqueci a senha</a></strong>
                 </div>
 
-                <div id="signin">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <button id="signinButton" onclick="alert(message())">Entrar</button>
-                    <a id="linkCadastro" href="./cadastro.html">Cadastre-se</a>
-                </div>
+                
                 
             </form>
-            
 
-        
+            <div id="signin">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <button id="signinButton" onclick="login()">Entrar</button>
+                <a id="linkCadastro" href="./cadastro.html">Cadastre-se</a>
+            </div>
 
         
     </div>
     
 </body>
 
-<script src="./js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/controllers/LoginController.js"></script>
 </html>

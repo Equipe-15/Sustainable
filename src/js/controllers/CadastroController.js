@@ -3,6 +3,8 @@ const tipoElement = document.querySelector("#tipo");
 const pessoaElement = document.querySelector("#pessoa");
 const formElement = document.querySelector("#generalForm");
 
+
+
 function changeValue(elementValue) {
   if (elementValue === "Cliente") {
     const getElementsFornecedor = document.getElementsByClassName(
@@ -143,4 +145,102 @@ function changeValue(elementValue) {
 
     formElement.appendChild(inputElement3);
   }
+}
+
+function storeUser() {
+  const getnome = document.querySelector("#nome");
+  const getsobrenome = document.querySelector("#sobrenome");
+  const getEmail = document.querySelector("#email");
+  const getSenha = document.querySelector("#password");
+  const getPhone = document.querySelector("#phone");
+  const getCep = document.querySelector("#cep");
+  const getLogradouro = document.querySelector("#logradouro");
+  const getnumero = document.querySelector("#numero");
+  const getcomplemento = document.querySelector("#complemento");
+  const getbairro = document.querySelector("#bairro");
+  const getcidade = document.querySelector("#cidade");
+  const getestado = document.querySelector("#estado");
+  const gettipo = document.querySelector("#tipo");
+  let data;
+  let getRG;
+  let getOrgao;
+  let getCPF;
+  let getrazaoSocial;
+  let getInscricaoEstadual;
+  let getCnpj;
+
+  if (gettipo.value === "Cliente") {
+    getRG = document.querySelector("#rg");
+    getOrgao = document.querySelector("#orgao");
+    getCPF = document.querySelector("#cpf");
+
+    data = {
+      nome: getnome.value,
+      sobrenome: getsobrenome.value,
+      email: getEmail.value,
+      senha: getSenha.value,
+      phone: getPhone.value,
+      cep: getCep.value,
+      logradouro: getLogradouro.value,
+      numero: getnumero.value,
+      complemento: getcomplemento.value,
+      bairro: getbairro.value,
+      cidade: getcidade.value,
+      estado: getestado.value,
+      tipo: gettipo.value,
+      rg: getRG.value,
+      orgaoexp: getOrgao.value,
+      cpf: getCPF.value,
+    };
+    getRG.value = "";
+    getOrgao.value = "";
+    getCPF.value = "";
+  }
+
+  if (gettipo.value === "Fornecedor") {
+    getrazaoSocial = document.querySelector("#razao");
+    getInscricaoEstadual = document.querySelector("#inscricao");
+    getCnpj = document.querySelector("#cnpj");
+
+    data = {
+      nome: getnome.value,
+      sobrenome: getsobrenome.value,
+      email: getEmail.value,
+      senha: getSenha.value,
+      phone: getPhone.value,
+      cep: getCep.value,
+      logradouro: getLogradouro.value,
+      numero: getnumero.value,
+      complemento: getcomplemento.value,
+      bairro: getbairro.value,
+      cidade: getcidade.value,
+      estado: getestado.value,
+      tipo: gettipo.value,
+      razaoSocial: getrazaoSocial.value,
+      inscricaoEstadual: getInscricaoEstadual.value,
+      cnpj: getCnpj.value,
+    };
+
+    getrazaoSocial.value = "";
+    getInscricaoEstadual.value = "";
+    getCnpj.value = "";
+  }
+
+  localStorage.setItem("User", JSON.stringify(data));
+
+  getnome.value = "";
+  getsobrenome.value = "";
+  getEmail.value = "";
+  getSenha.value = "";
+  getPhone.value = "";
+  getCep.value = "";
+  getLogradouro.value = "";
+  getnumero.value = "";
+  getcomplemento.value = "";
+  getbairro.value = "";
+  getcidade.value = "";
+  getestado.value = "";
+  gettipo.value = "Selecione uma opção";
+
+  window.location = "index.html";
 }
