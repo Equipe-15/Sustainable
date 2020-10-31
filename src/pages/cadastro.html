@@ -61,25 +61,28 @@
 
                 <div class="TextInput">
                     <label for="tipo">Tipo </label> 
-                    <select style="display: block;" name="tipo" id="tipo" form="generalForm">
-                        <option selected value="Cliente">Cliente</option>
+                    <select style="display: block;" onchange="changeValue(this.value)" name="tipo" id="tipo" form="generalForm">
+                        <option selected value="Selecione uma opção">Selecione uma opção</option>
+                        <option value="Cliente">Cliente</option>
                         <option value="Fornecedor">Fornecedor</option>
                       </select>
 
-                      <label for="pessoa">Pessoa </label> 
-                    <select style="display: block;" name="pessoa" id="pessoa" form="generalForm">
+                      <!-- <label for="pessoa">Pessoa </label> 
+                    <select style="display: block;" onchange="e => e.target.value" name="pessoa" id="pessoa" form="generalForm">
                         <option selected value="Pessoa Física">Pessoa Física</option>
                         <option value="Pessoa Jurídica">Pessoa Jurídica</option>
-                      </select>
+                      </select> -->
                 </div>
 
                 
 
-                <div id="signin">
-                    <a id="linkCadastro" href="./cadastroParte2Fisica.html">Próximo</a>
-                </div>
+                
                 
             </form>
+
+            <div id="signin">
+                    <a id="linkCadastro" href="./cadastroParte2Fisica.html">Cadastrar</a>
+                </div>
             
 
         
@@ -91,4 +94,5 @@
 
 <!-- <script src="./js/index.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/controllers/CadastroController.js"></script>
 </html>

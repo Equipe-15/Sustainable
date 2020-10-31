@@ -71,7 +71,31 @@ body {
     flex-direction: column;
 }
 
+.TextInputClient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TextInputFornecedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .TextInput i {
+    color: #6BBB8A;
+    font-size: 22px;
+}
+
+.TextInputClient i {
+    color: #6BBB8A;
+    font-size: 22px;
+}
+
+.TextInputFornecedor i {
     color: #6BBB8A;
     font-size: 22px;
 }
