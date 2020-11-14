@@ -18,16 +18,20 @@
     border-radius: 4px;
 }
 
-.imgContainer button {
+.imgContainer a {
     border: 0;
     margin-top: 15px;
     background: #64BF8B;
     padding: 5px;
     box-shadow: 6px 4px 3px black;
     cursor: pointer;
+    text-decoration: none;
+    color:#000;
+    text-align: center;
+    border-radius: 4px;
 }
 
-.imgContainer button:hover {
+.imgContainer a:hover {
     background: #2E8B57;
 }
 

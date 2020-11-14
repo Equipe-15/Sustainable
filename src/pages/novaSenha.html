@@ -7,6 +7,7 @@
     <link href="../styles/global.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../styles/global.css"> -->
 </head>
 <body>
     <div id="container">
@@ -15,19 +16,23 @@
             <h1>Esqueceu a senha?</h1>
 
         <p>
-            Informe seu login nós enviaremos um e-mail com link para que você possa
-            redefinir sua senha.
+            Informe uma nova senha!
         </p>
         </div>
         
-            <form action="mailto:ilgssonbraga@gmail.com" method="post" enctype="text/plain">
+            <form id="nova-senha">
                 <div class="TextInput">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input class="inputText" type="text" placeholder="e-mail" />
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input class="inputText" type="password" id="newpassword" placeholder="nova senha" />
+                </div>
+
+                <div class="TextInput">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input class="inputText" type="password" id="repeatpassword" placeholder="repita a nova senha" />
                 </div>
 
                 <div id="signin">
-                    <button id="signinButton" type="submit">Enviar e-mail</button>
+                    <a id="signinButton" onclick="changePassword()">Alterar senha</a>
                 </div>
                 
             </form>
@@ -40,6 +45,6 @@
     
 </body>
 
-<script src="./js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/controllers/newPasswordController.js"></script>
 </html>

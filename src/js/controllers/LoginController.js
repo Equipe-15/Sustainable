@@ -1,3 +1,9 @@
+const infoLogin = JSON.parse(localStorage.getItem("SustainableLogin"));
+
+if (infoLogin && infoLogin.isLogged) {
+  window.location = "meuPerfil.html";
+}
+
 function login() {
   const userInfo = JSON.parse(localStorage.getItem("User"));
   const getEmail = document.querySelector("#email");
