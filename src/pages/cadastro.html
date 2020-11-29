@@ -29,6 +29,15 @@
                     <label for="sobrenome">Sobrenome </label> 
                     <input type="text" id="sobrenome" placeholder="Sobrenome" />
                 </div>
+
+                <div class="TextInput">
+                <label for="pessoa">Selecione o tipo de usuário da plataforma </label> 
+                    <select style="display: block;" onchange="e => e.target.value" name="pessoa" id="userType" form="generalForm">
+                        <option selected value="Selecione uma opção">Selecione uma opção</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Fornecedor">Fornecedor</option>
+                      </select>
+                    </div>
                 
                 <div class="TextInput">
                     <label for="email">E-mail </label> 
@@ -78,15 +87,11 @@
                     <label for="tipo">Tipo </label> 
                     <select style="display: block;" onchange="changeValue(this.value)" name="tipo" id="tipo" form="generalForm">
                         <option selected value="Selecione uma opção">Selecione uma opção</option>
-                        <option value="Cliente">Cliente</option>
-                        <option value="Fornecedor">Fornecedor</option>
+                        <option value="Fisica">Pessoa física</option>
+                        <option value="Juridica">Pessoa jurídica</option>
                       </select>
 
-                      <!-- <label for="pessoa">Pessoa </label> 
-                    <select style="display: block;" onchange="e => e.target.value" name="pessoa" id="pessoa" form="generalForm">
-                        <option selected value="Pessoa Física">Pessoa Física</option>
-                        <option value="Pessoa Jurídica">Pessoa Jurídica</option>
-                      </select> -->
+                      
                 </div>
 
                 

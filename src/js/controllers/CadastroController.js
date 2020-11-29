@@ -6,7 +6,7 @@ const formElement = document.querySelector("#generalForm");
 
 
 function changeValue(elementValue) {
-  if (elementValue === "Cliente") {
+  if (elementValue === "Fisica") {
     const getElementsFornecedor = document.getElementsByClassName(
       "TextInputFornecedor"
     );
@@ -76,7 +76,7 @@ function changeValue(elementValue) {
     inputElement3.appendChild(inputRGElement3);
 
     formElement.appendChild(inputElement3);
-  } else if (elementValue === "Fornecedor") {
+  } else if (elementValue === "Juridica") {
     const getElementsClient = document.getElementsByClassName(
       "TextInputClient"
     );
@@ -161,6 +161,7 @@ function storeUser() {
   const getcidade = document.querySelector("#cidade");
   const getestado = document.querySelector("#estado");
   const gettipo = document.querySelector("#tipo");
+  const getUserType = document.querySelector("#userType");
   let data;
   let getRG;
   let getOrgao;
@@ -169,7 +170,7 @@ function storeUser() {
   let getInscricaoEstadual;
   let getCnpj;
 
-  if (gettipo.value === "Cliente") {
+  if (gettipo.value === "Fisica") {
     getRG = document.querySelector("#rg");
     getOrgao = document.querySelector("#orgao");
     getCPF = document.querySelector("#cpf");
@@ -177,6 +178,7 @@ function storeUser() {
     data = {
       nome: getnome.value,
       sobrenome: getsobrenome.value,
+      tipoUsuario: getUserType.value,
       email: getEmail.value,
       senha: getSenha.value,
       phone: getPhone.value,
@@ -197,7 +199,7 @@ function storeUser() {
     getCPF.value = "";
   }
 
-  if (gettipo.value === "Fornecedor") {
+  if (gettipo.value === "Juridica") {
     getrazaoSocial = document.querySelector("#razao");
     getInscricaoEstadual = document.querySelector("#inscricao");
     getCnpj = document.querySelector("#cnpj");
@@ -205,6 +207,7 @@ function storeUser() {
     data = {
       nome: getnome.value,
       sobrenome: getsobrenome.value,
+      tipoUsuario: getUserType.value,
       email: getEmail.value,
       senha: getSenha.value,
       phone: getPhone.value,
@@ -230,6 +233,7 @@ function storeUser() {
 
   getnome.value = "";
   getsobrenome.value = "";
+  getUserType.value = "";
   getEmail.value = "";
   getSenha.value = "";
   getPhone.value = "";

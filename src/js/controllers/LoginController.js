@@ -24,7 +24,13 @@ function login() {
         "SustainableLogin",
         JSON.stringify({ isLogged: true })
       );
-      window.location = "meuPerfil.html";
+
+        if(userInfo.tipoUsuario === 'Fornecedor'){
+          window.location = "meuPerfil.html";
+        }else{
+          window.location = "meuPerfilCliente.html";
+        }
+
     } else {
       alert("Usuário não encontrado!");
     }

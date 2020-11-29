@@ -1,0 +1,16 @@
+#infoProduct {
+    color: #fff;
+    margin-top: 30px;
+}
+
+#linkPedirProduto {
+    color: #000;
+    margin-top: 30px;
+    background:  #6BBB8A;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#linkPedirProduto:hover {
+    background:  #459043;
+}
