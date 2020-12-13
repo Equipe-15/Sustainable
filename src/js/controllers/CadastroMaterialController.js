@@ -6,6 +6,7 @@ function storeMaterial() {
   const materiais = JSON.parse(localStorage.getItem("Materiais"));
 
   const data = {
+    id: Date.now(),
     tipo: getTipo.value,
     local: getLocal.value,
     data: getData.value,

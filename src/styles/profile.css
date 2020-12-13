@@ -8,30 +8,38 @@
 }
 
 .infoContainer {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .infoContainer strong {
     background: #64BF8B; 
-    box-shadow: 6px 4px 3px black;
     padding: 5px;
     border-radius: 4px;
 }
 
-.imgContainer a {
+.imgContainer div {
     border: 0;
     margin-top: 15px;
     background: #64BF8B;
     padding: 5px;
-    box-shadow: 6px 4px 3px black;
     cursor: pointer;
     text-decoration: none;
     color:#000;
-    text-align: center;
     border-radius: 4px;
 }
 
-.imgContainer a:hover {
+.profileInfo a {
+    border: 0;
+    height: 35px;
+    background: #64BF8B;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#000;
+    border-radius: 4px;
+}
+
+.profileInfo a:hover {
     background: #2E8B57;
 }
 
@@ -80,6 +88,14 @@
     margin-top: 30px;
 }
 
+.materialContent a {
+    color: #64BF8B;
+}
+
+.materialContent a:hover {
+    color: #2E8B57;
+}
+
 .materialContent img {
     width: 90% !important;
     border-radius: 0 !important;
@@ -126,9 +142,9 @@
   }
 
   #titlePerfil button {
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
     border: 0;
     background: red;
     color: #fff;

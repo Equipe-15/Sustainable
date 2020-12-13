@@ -1,0 +1,26 @@
+#containerPedidoFinalizado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerPedidoFinalizado p {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#containerPedidoFinalizado img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+#containerPedidoFinalizado p a {
+    color:#6BBB8A;
+}
+
+#containerPedidoFinalizado p a:hover {
+    color:#459043;
+}
